@@ -1,0 +1,40 @@
+/* Single source of truth for the product palette and type system. */
+:root {
+  --brand-plum: #743d83;
+  --brand-plum-dark: #492953;
+  --brand-rose: #eaa5ad;
+  --brand-rose-light: #f3d6dd;
+  --brand-teal: #56a6a3;
+  --brand-teal-dark: #357d80;
+  --brand-gold: #d9b77b;
+  --brand-gold-light: #f7e9ce;
+  --brand-ink: #332c39;
+  --brand-muted: #716977;
+  --brand-paper: #fffaf7;
+  --brand-line: #efe5e4;
+  --brand-lilac: #f1e9f2;
+  --brand-mint: #edf5f1;
+  --type-display: Georgia, 'Times New Roman', serif;
+  --type-sans: Inter, Aptos, 'Segoe UI', sans-serif;
+}
+
+@theme inline {
+  --color-plum: var(--brand-plum);
+  --color-plum-dark: var(--brand-plum-dark);
+  --color-rose: var(--brand-rose);
+  --color-rose-light: var(--brand-rose-light);
+  --color-teal: var(--brand-teal);
+  --color-teal-dark: var(--brand-teal-dark);
+  --color-gold: var(--brand-gold);
+  --color-gold-light: var(--brand-gold-light);
+  --color-ink: var(--brand-ink);
+  --color-muted: var(--brand-muted);
+  --color-paper: var(--brand-paper);
+  --color-line: var(--brand-line);
+  --color-lilac: var(--brand-lilac);
+  --color-mint: var(--brand-mint);
+  --font-display: var(--type-display);
+  --font-sans: var(--type-sans);
+  --shadow-soft: 0 22px 70px rgb(73 41 83 / 10%);
+  --shadow-card: 0 12px 36px rgb(73 41 83 / 5%);
+}
