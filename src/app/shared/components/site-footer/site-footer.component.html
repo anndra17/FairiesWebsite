@@ -1,7 +1,7 @@
 <footer class="bg-plum-dark py-7 text-white/80">
   <div class="site-container flex flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
-    <a class="flex items-center gap-3 text-white" href="#acasa"><img class="size-12 rounded-full object-cover" src="/assets/logo-emblem.png" alt="" width="48" height="48" /><span class="font-display text-lg">Ursitoarele Fermecătoare</span></a>
-    <p class="text-sm">Magia primelor amintiri · Brașov</p>
-    <a class="text-sm text-rose-light transition hover:text-white" href="#acasa">Cu drag și un pic de sclipici ✧</a>
+    <a class="flex items-center gap-3 text-white" href="#home" [attr.aria-label]="content.footer.brandName"><img class="size-12 rounded-full object-cover" src="/assets/logo-emblem.png" [attr.alt]="content.footer.logoAlt" width="48" height="48" /><span class="font-display text-lg">{{ content.footer.brandName }}</span></a>
+    <p class="text-sm">{{ content.footer.tagline }}</p>
+    <a class="text-sm text-rose-light transition hover:text-white" href="#home" [attr.aria-label]="content.footer.homeLinkLabel">{{ content.footer.signoff }} <span aria-hidden="true">✧</span></a>
   </div>
 </footer>
