@@ -29,10 +29,10 @@ export const SITE_CONTENT = {
     imageAlt: 'Trei zâne în jurul unui bebeluș',
     valuesHeading: 'Ce punem în fiecare poveste',
     valueHighlights: [
-      { icon: '♡', label: 'Apropiere de oameni' },
-      { icon: '✦', label: 'Creativitate' },
-      { icon: '❀', label: 'Respect' },
-      { icon: '☼', label: 'Divertisment' },
+      { icon: 'people-heart', label: 'Apropiere de oameni' },
+      { icon: 'creativity-star', label: 'Creativitate' },
+      { icon: 'respect-hand', label: 'Respect' },
+      { icon: 'entertainment-masks', label: 'Divertisment' },
     ],
   },
   story: {
@@ -51,9 +51,9 @@ export const SITE_CONTENT = {
     title: 'Trei feluri de a face loc imaginației',
     description: 'Poți alege doar un moment plin de emoție sau poți lăsa povestea să continue cu activități pentru cei mici.',
     cards: [
-      { icon: '🧚', category: 'Poveste', title: 'Spectacolul Ursitoarelor', description: 'Trei zâne, urări pentru micuț, bunici și nași prinși în poveste, apoi probe jucăușe pentru invitați. Un final cu zâmbete, aplauze și fotografii.', detail: '15–20 minute · moment pentru toată familia' },
-      { icon: '🎨', category: 'Culoare', title: 'Pictură pe față', description: 'După întâlnirea cu zânele, copiii își aleg un personaj preferat. Culori profesionale, pensule și sclipici cosmetic transformă imaginația în culoare.', detail: 'Pentru copii · maximum 12 incluși în pachet' },
-      { icon: '✂️', category: 'Creație', title: 'Atelier creativ', description: 'Mânuțe ocupate, imaginație în voie: copiii creează aripi de zână sau săbii de cavaler și își iau acasă ceva făcut chiar de ei.', detail: 'Materiale reutilizate · aproximativ 50 minute' },
+      { icon: 'fairy', category: 'Poveste', title: 'Spectacolul Ursitoarelor', description: 'Trei zâne, urări pentru micuț, bunici și nași prinși în poveste, apoi probe jucăușe pentru invitați. Un final cu zâmbete, aplauze și fotografii.', detail: '15–20 minute · moment pentru toată familia' },
+      { icon: 'palette', category: 'Culoare', title: 'Pictură pe față', description: 'După întâlnirea cu zânele, copiii își aleg un personaj preferat. Culori profesionale, pensule și sclipici cosmetic transformă imaginația în culoare.', detail: 'Pentru copii · maximum 12 incluși în pachet' },
+      { icon: 'scissors', category: 'Creație', title: 'Atelier creativ', description: 'Mânuțe ocupate, imaginație în voie: copiii creează aripi de zână sau săbii de cavaler și își iau acasă ceva făcut chiar de ei.', detail: 'Materiale reutilizate · aproximativ 50 minute' },
     ],
   },
   packages: {
@@ -75,10 +75,10 @@ export const SITE_CONTENT = {
     titleSecondLine: 'Dar mai întâi, oameni.',
     description: 'Ne place magia cu picioarele pe pământ: caldă, jucăușă și sinceră. Așa vrem să vă simțiți când suntem împreună.',
     cards: [
-      { icon: '♡', title: 'Aproape de oameni', description: 'Te ascultăm, ne adaptăm și avem grijă să se simtă bine și cei emoționați, și cei puși pe șotii.' },
-      { icon: '✦', title: 'Creativitate', description: 'Inventăm povești, probe și activități care îi lasă pe copii să-și folosească imaginația.' },
-      { icon: '❀', title: 'Respect', description: 'Fiecare familie, copil și moment are ritmul lui. Venim cu grijă și ne purtăm firesc cu toată lumea.' },
-      { icon: '☼', title: 'Divertisment', description: 'Ne place să râdem împreună. Malefica are voie să fie poznașă, iar invitații — să intre în joc.' },
+      { icon: 'people-heart', title: 'Aproape de oameni', description: 'Te ascultăm, ne adaptăm și avem grijă să se simtă bine și cei emoționați, și cei puși pe șotii.' },
+      { icon: 'creativity-star', title: 'Creativitate', description: 'Inventăm povești, probe și activități care îi lasă pe copii să-și folosească imaginația.' },
+      { icon: 'respect-hand', title: 'Respect', description: 'Fiecare familie, copil și moment are ritmul lui. Venim cu grijă și ne purtăm firesc cu toată lumea.' },
+      { icon: 'entertainment-masks', title: 'Divertisment', description: 'Ne place să râdem împreună. Malefica are voie să fie poznașă, iar invitații — să intre în joc.' },
     ],
   },
   preparation: {
