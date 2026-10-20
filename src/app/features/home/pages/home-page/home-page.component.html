@@ -51,7 +51,7 @@
     <div class="grid gap-5 md:grid-cols-3">
       @for (experience of content.experiences.cards; track experience.number) {
         <article class="rounded-3xl border border-line bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft sm:p-7">
-          <div class="mb-5 flex items-center justify-between"><span class="grid size-14 place-items-center rounded-2xl bg-rose/20 text-2xl" aria-hidden="true">{{ experience.icon }}</span><span class="font-display italic text-muted/60">{{ experience.number }} / {{ experience.category }}</span></div>
+          <div class="mb-5 flex items-center justify-between"><span class="grid size-14 place-items-center rounded-2xl bg-rose/20 text-2xl" aria-hidden="true">{{ experience.icon }}</span><span class="font-display italic text-muted/60">{{ experience.category }}</span></div>
           <h3 class="font-display text-2xl text-plum-dark">{{ experience.title }}</h3><p class="mt-2 leading-relaxed text-muted">{{ experience.description }}</p><p class="mt-5 text-sm font-bold text-teal-dark">{{ experience.detail }}</p>
         </article>
       }
