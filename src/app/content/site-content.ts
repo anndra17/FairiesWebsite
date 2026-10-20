@@ -11,12 +11,12 @@ export const SITE_CONTENT = {
     menuOpenLabel: 'Deschide meniul',
     menuCloseLabel: 'Închide meniul',
     links: [
-      { label: 'Povestea noastră', target: 'story' },
-      { label: 'Experiențe', target: 'experiences' },
-      { label: 'Pachete 2026', target: 'packages' },
-      { label: 'Valorile noastre', target: 'values' },
+      { label: 'Acasă', target: '/', page: true },
+      { label: 'Galerie', target: '/galerie', page: true },
+      { label: 'Povestea noastră', target: '/povestea-noastra', page: true },
+      { label: 'Pachete 2026', target: '/pachete-2026', page: true },
     ],
-    cta: { label: 'Hai să alegem magia', target: 'packages' },
+    cta: { label: 'Hai să alegem magia', target: '/pachete-2026', page: true },
   },
   hero: {
     eyebrow: 'Ursitoarele Fermecătoare · Brașov',

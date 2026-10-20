@@ -27,9 +27,9 @@
         </div>
       </div>
       <div class="flex flex-col items-center justify-between gap-5 text-center sm:items-end sm:text-right">
-        <a class="flex items-center gap-3 text-white" href="#home" [attr.aria-label]="content.footer.brandName"><img class="size-12 rounded-full object-cover" src="/assets/logo-emblem.png" [attr.alt]="content.footer.logoAlt" width="48" height="48" /><span class="font-display text-lg">{{ content.footer.brandName }}</span></a>
+        <a class="flex items-center gap-3 text-white" routerLink="/" fragment="home" [attr.aria-label]="content.footer.brandName"><img class="size-12 rounded-full object-cover" src="/assets/logo-emblem.png" [attr.alt]="content.footer.logoAlt" width="48" height="48" /><span class="font-display text-lg">{{ content.footer.brandName }}</span></a>
         <p class="text-sm">{{ content.footer.tagline }}</p>
-        <a class="text-sm text-rose-light transition hover:text-white" href="#home" [attr.aria-label]="content.footer.homeLinkLabel">{{ content.footer.signoff }} <span aria-hidden="true">✧</span></a>
+        <a class="text-sm text-rose-light transition hover:text-white" routerLink="/" fragment="home" [attr.aria-label]="content.footer.homeLinkLabel">{{ content.footer.signoff }} <span aria-hidden="true">✧</span></a>
       </div>
     </div>
   </div>
