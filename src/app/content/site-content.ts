@@ -106,5 +106,13 @@ export const SITE_CONTENT = {
     tagline: 'Magia primelor amintiri · Brașov',
     signoff: 'Cu drag și un pic de sclipici',
     homeLinkLabel: 'Înapoi sus',
+    contactHeading: 'Hai să vorbim despre povestea voastră',
+    phoneLabel: 'Sună-ne la +40774469280',
+    phoneNumber: '+40774469280',
+    socialLinks: [
+      { name: 'Facebook', ariaLabel: 'Pagina noastră de Facebook', url: 'https://www.facebook.com/UrsitoareleFermecatoareBrasov' },
+      { name: 'Instagram', ariaLabel: 'Pagina noastră de Instagram', url: 'https://www.instagram.com/ursitoarele_fermecatoare/' },
+      { name: 'TikTok', ariaLabel: 'Pagina noastră de TikTok', url: 'https://www.tiktok.com/@ursitoarele_fermecatoare' },
+    ],
   },
 } as const;

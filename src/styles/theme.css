@@ -14,8 +14,8 @@
   --brand-line: #efe5e4;
   --brand-lilac: #f1e9f2;
   --brand-mint: #edf5f1;
-  --type-display: Georgia, 'Times New Roman', serif;
-  --type-sans: Inter, Aptos, 'Segoe UI', sans-serif;
+  --type-display: 'Cormorant Garamond', Georgia, serif;
+  --type-sans: 'Quicksand', 'Segoe UI', sans-serif;
 }
 
 @theme inline {

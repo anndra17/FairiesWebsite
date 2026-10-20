@@ -94,7 +94,7 @@
     <div><span class="eyebrow">{{ content.preparation.eyebrow }}</span><h2 class="section-title">{{ content.preparation.title }}</h2><p class="mt-4 leading-relaxed text-muted">{{ content.preparation.description }}</p><a class="button-primary mt-6" href="#packages">{{ content.preparation.cta }} <span aria-hidden="true">↑</span></a></div>
     <ol class="space-y-3">
       @for (step of content.preparation.steps; track step.title; let i = $index) {
-        <li class="grid grid-cols-[42px_1fr] gap-4 rounded-2xl bg-white p-4 sm:p-5"><span class="grid size-10 place-items-center rounded-full bg-lilac font-display text-xl text-plum">{{ i + 1 }}</span><div><h3 class="font-bold text-plum-dark">{{ step.title }}</h3><p class="mt-1 text-sm leading-relaxed text-muted">{{ step.description }}</p></div></li>
+        <li class="grid grid-cols-[42px_1fr] gap-4 rounded-2xl bg-white p-4 sm:p-5"><span class="grid size-10 place-items-center rounded-full bg-lilac font-display text-xl text-plum">{{ i + 1 }}</span><div><h3 class="text-lg font-bold text-plum-dark">{{ step.title }}</h3><p class="mt-1 text-sm leading-relaxed text-muted">{{ step.description }}</p></div></li>
       }
     </ol>
   </div>
