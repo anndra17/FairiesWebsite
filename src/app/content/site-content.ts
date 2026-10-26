@@ -22,7 +22,7 @@ export const SITE_CONTENT = {
     eyebrow: 'Ursitoarele Fermecătoare · Brașov',
     titleFirstLine: 'O poveste mică.',
     titleSecondLine: 'O amintire mare.',
-    description: 'La botez, trei zâne intră în poveste: două vin cu urări din suflet, iar a treia… cu chef de glume. Aducem emoție, râsete și un moment în care toată familia se simte parte din poveste.',
+    description: 'La botez, trei zâne intră în poveste: două vin cu urări din suflet, iar a treia… cu chef de glume. Aducem emoție, râsete și un moment în care toată familia face parte din poveste.',
     primaryCta: { label: 'Descoperă experiențele', target: 'experiences' },
     secondaryCta: { label: 'Vezi pachetele 2026', target: 'packages' },
     note: 'Momente trăite împreună, povești care rămân.',
@@ -85,7 +85,7 @@ export const SITE_CONTENT = {
     eyebrow: 'Un mic ajutor pentru gazde',
     title: 'Voi vă bucurați de zi. Noi aducem povestea.',
     description: 'Pentru ca momentul să se vadă și să se audă bine, sunt câteva lucruri simple de pregătit. Iar dacă ceva lipsește, spune-ne din timp și găsim o soluție împreună.',
-    cta: 'Înapoi la pachete',
+    cta: 'Vezi pachete',
     steps: [
       { title: 'Alege un loc vizibil și bine luminat', description: 'Cu spațiu pentru scenetă și fără boxe prea aproape, ca să evităm crearea microfoniei.' },
       { title: 'Pregătește două scaune pentru părinți', description: 'Și spune-ne numele copilului, ca povestea să fie despre el.' },
@@ -97,7 +97,7 @@ export const SITE_CONTENT = {
     eyebrow: 'Următoarea poveste poate fi a voastră',
     title: 'Facem loc și pentru zâmbetul vostru?',
     description: 'Răsfoiește pachetele, alege ce vi se potrivește și păstrează un strop de loc pentru surprize. Noi venim cu zânele și cu chef de poveste.',
-    cta: 'Alege pachetul vostru',
+    cta: '  Sună sau scrie-ne',
     target: 'packages',
   },
   footer: {
