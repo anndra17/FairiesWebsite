@@ -7,7 +7,10 @@
   h1, h2, h3, h4, h5, h6 { font-family: var(--type-display); }
   img { display: block; max-width: 100%; }
   ::selection { background: var(--color-plum); color: white; }
-  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    app-gallery-page .gallery-slider .slide .item { transition-duration: .65s !important; }
+  }
 }
 
 @layer components {
