@@ -68,6 +68,12 @@
   text-underline-offset: 6px;
 }
 
+.category-tab:not(.active):hover,
+.category-tab:not(.active):active {
+  color: #d48be3;
+  text-shadow: 0 0 10px #6f3b78, 0 1px 5px rgb(25 13 28 / 70%);
+}
+
 .category-separator {
   display: grid;
   width: 24px;
@@ -209,6 +215,13 @@
   font: 30px/1 Georgia, serif;
   box-shadow: 0 8px 22px #35163d2b;
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-controls button:hover,
+.gallery-controls button:active {
+  transform: scale(1.06);
+  background: #6f3b78;
+  color: #fffaf8;
 }
 
 .photo-count {
