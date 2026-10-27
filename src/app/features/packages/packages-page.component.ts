@@ -4,7 +4,8 @@ import { SITE_CONTENT } from '../../content/site-content';
 @Component({
   selector: 'app-packages-page',
   template: `
-    <section id="packages" class="scroll-mt-24 bg-[radial-gradient(ellipse_at_10%_10%,#f5e8f2_0,transparent_34%),var(--color-paper)] py-16 sm:py-24">
+    <div class="bg-[radial-gradient(ellipse_at_85%_15%,#f9e6e8_0,transparent_32%),radial-gradient(ellipse_at_4%_90%,#e7f3ef_0,transparent_34%),linear-gradient(140deg,var(--color-paper),#fff_58%,#fff6f1)]">
+    <section id="packages" class="scroll-mt-24 py-16 sm:py-24">
       <div class="site-container">
         <div class="mx-auto mb-10 max-w-[720px] text-center"><span class="eyebrow">{{ content.packages.eyebrow }}</span><h1 class="section-title">{{ content.packages.title }}</h1><p class="mt-4 text-lg leading-relaxed text-muted">{{ content.packages.description }}</p></div>
         <div class="grid items-stretch gap-5 lg:grid-cols-3">
@@ -22,21 +23,22 @@ import { SITE_CONTENT } from '../../content/site-content';
       </div>
     </section>
 
-    <section id="preparation" class="scroll-mt-24 bg-mint/70 py-20 sm:py-24 lg:py-28">
+    <section id="preparation" class="scroll-mt-24 py-20 sm:py-24 lg:py-28">
       <div class="site-container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div>
           <span class="eyebrow">{{ content.preparation.eyebrow }}</span>
           <h2 class="section-title">{{ content.preparation.title }}</h2>
           <p class="mt-4 leading-relaxed text-muted">{{ content.preparation.description }}</p>
-          <a class="button-primary mt-6" href="#packages">{{ content.preparation.cta }}</a>
+          <a class="button-primary mt-6" href="tel:0774469280">{{ content.preparation.cta }}</a>
         </div>
         <ol class="grid grid-rows-4 gap-3">
           @for (step of content.preparation.steps; track step.title; let i = $index) {
-            <li class="grid grid-cols-[42px_1fr] gap-4 rounded-2xl bg-white p-4 sm:p-5"><span class="grid size-10 place-items-center rounded-full bg-lilac font-display text-xl text-plum">{{ i + 1 }}</span><div><h3 class="text-lg font-bold text-plum-dark">{{ step.title }}</h3><p class="mt-1 text-sm leading-relaxed text-muted">{{ step.description }}</p></div></li>
+            <li class="grid grid-cols-[42px_1fr] gap-4 rounded-2xl bg-white p-4 shadow-card sm:p-5"><span class="grid size-10 place-items-center rounded-full bg-lilac font-display text-xl text-plum">{{ i + 1 }}</span><div><h3 class="text-lg font-bold text-plum-dark">{{ step.title }}</h3><p class="mt-1 text-sm leading-relaxed text-muted">{{ step.description }}</p></div></li>
           }
         </ol>
       </div>
     </section>
+    </div>
   `,
 })
 export class PackagesPageComponent { protected readonly content = SITE_CONTENT; }
