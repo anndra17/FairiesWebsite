@@ -6,6 +6,32 @@ interface GalleryPhoto {
   story: string;
 }
 
+const PHOTO_TITLES: Record<string, string> = {
+  'PozaUrsittoareVeche.jpeg': 'Întâlnire',
+  'UrsitoareUrari.jpeg': 'Urări',
+  'ParintiIntreUrsitoare.jpeg': 'Împreună',
+  'ZaneBuneExterior.jpeg': 'Bucurie',
+  'ParintiIntreAripi.jpeg': 'Emoție',
+  'Malefica.jpeg': 'Mister',
+  'MaleficaSiZanaBuna.jpeg': 'Surpriză',
+  'MaleficaSiPruncii.jpeg': 'Râsete',
+  'PozaFinalFamilie.jpeg': 'Amintire',
+  'UrsitoareFamilieExterior.jpeg': 'Autentic',
+  'Ananas.jpeg': 'Culoare',
+  'Batman.jpeg': 'Curaj',
+  'bee.jpeg': 'Joacă',
+  'Capybara.jpeg': 'Blândețe',
+  'Cirese.jpeg': 'Prospețime',
+  'Spiderman.jpeg': 'Energie',
+  'stitch.jpeg': 'Pozne',
+  'tulips.jpeg': 'Delicatețe',
+  'tulips2.jpg': 'Primăvară',
+  'AripiFinalizate.jpeg': 'Mândrie',
+  'AtelierAripi.jpeg': 'Creativitate',
+  'ReciclARTAdulti.jpeg': 'Inspirație',
+  'SetupReciclART.jpeg': 'Început',
+};
+
 interface GalleryCategory {
   id: string;
   label: string;
@@ -79,6 +105,11 @@ export class GalleryPageComponent {
 
   protected get activePhoto(): GalleryPhoto {
     return this.visiblePhotos[1] ?? this.visiblePhotos[0];
+  }
+
+  protected get activePhotoTitle(): string {
+    const filename = this.activePhoto.src.split('/').pop() ?? '';
+    return PHOTO_TITLES[filename] ?? this.activeCategory.title;
   }
 
   protected selectCategory(index: number): void {
