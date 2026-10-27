@@ -67,7 +67,7 @@ export const SITE_CONTENT = {
       { tier: 'Pachetul 3', name: 'Tărâm Fermecat', description: 'Povestea nu se oprește odată cu pleacea zânelor. Copiii creează, se joacă și duc magia mai departe.', price: '1.320*', currency: 'lei', duration: '75–80 minute', featured: false, features: ['Spectacolul Ursitoarelor Fermecătoare', 'Pictură pe față pentru maximum 12 copii', 'Atelier creativ cu materiale pentru 12 copii'], cta: 'Vezi cum ne pregătim', target: 'preparation' },
     ],
     noteLabel: '*De știut:',
-    note: 'Pachetele cu pictură pe față sau atelier creativ includ până la 12 copii. Pentru fiecare copil în plus: 20 lei la pictura pe față și 40 lei la atelier. Pentru evenimente în afara Brașovului se adaugă transportul. Boxa portabilă și microfonul sunt disponibile la cerere, cu un cost suplimentar de 50 lei.',
+    note: 'Pachetele cu pictură pe față sau atelier creativ includ până la 12 copii. Putem acoperi un număr mai mare de copii contra cost. Pentru evenimente în afara Brașovului se adaugă transportul. Boxa portabilă și microfonul sunt disponibile la cerere contra cost.',
   },
   values: {
     eyebrow: 'Felul nostru de a fi',
