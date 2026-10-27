@@ -48,11 +48,13 @@ export class GalleryPageComponent {
       photos: [
         { src: '/assets/gallery/FacePainting/Ananas.jpeg', alt: 'Pictură pe față cu ananas' },
         { src: '/assets/gallery/FacePainting/Batman.jpeg', alt: 'Pictură pe față cu Batman' },
-        { src: '/assets/gallery/FacePainting/Batman2.jpeg', alt: 'Un alt model de pictură cu Batman' },
+        { src: '/assets/gallery/FacePainting/bee.jpeg', alt: 'Pictură pe față cu o albină' },
         { src: '/assets/gallery/FacePainting/Capybara.jpeg', alt: 'Pictură pe față cu o capibara' },
         { src: '/assets/gallery/FacePainting/Cirese.jpeg', alt: 'Pictură pe față cu cireșe' },
-        { src: '/assets/gallery/FacePainting/LegoNinjago.jpeg', alt: 'Pictură pe față cu personaj Lego Ninjago' },
         { src: '/assets/gallery/FacePainting/Spiderman.jpeg', alt: 'Pictură pe față cu Spider-Man' },
+        { src: '/assets/gallery/FacePainting/stitch.jpeg', alt: 'Pictură pe față cu Stitch' },
+        { src: '/assets/gallery/FacePainting/tulips.jpeg', alt: 'Pictură pe față cu lalele' },
+        { src: '/assets/gallery/FacePainting/tulips2.jpg', alt: 'Un alt model de pictură cu lalele' },
       ],
     },
     {
