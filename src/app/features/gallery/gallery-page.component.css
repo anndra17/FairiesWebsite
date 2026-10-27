@@ -10,7 +10,7 @@
 
 .gallery-page {
   display: grid;
-  grid-template-rows: auto auto minmax(100svh, 1fr);
+  grid-template-rows: auto auto auto;
   width: 100%;
   min-height: calc(100svh - 110px);
 }
@@ -61,17 +61,18 @@
 .gallery-slider {
   position: relative;
   width: 100%;
-  min-height: 100svh;
+  height: min(680px, calc(68vh + 40px));
+  min-height: 470px;
   overflow: hidden;
   background: #68466e;
 }
 
 .slide .item {
   position: absolute;
-  top: calc(50% - 150px);
+  top: calc(50% - 120px);
   display: inline-block;
-  width: 200px;
-  height: 300px;
+  width: 160px;
+  height: 240px;
   transform: none;
   border-radius: 20px;
   background-color: #68466e;
@@ -94,15 +95,15 @@
 .slide > .item:nth-child(2)::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgb(23 13 28 / 65%), rgb(23 13 28 / 15%) 62%, transparent);
+  background: linear-gradient(90deg, rgb(23 13 28 / 48%), rgb(23 13 28 / 5%) 62%, transparent);
   content: '';
 }
 
-.slide > .item:nth-child(3) { left: 50%; }
-.slide > .item:nth-child(4) { left: calc(50% + 220px); }
-.slide > .item:nth-child(5) { left: calc(50% + 440px); }
+.slide > .item:nth-child(3) { left: 52%; }
+.slide > .item:nth-child(4) { left: calc(52% + 170px); }
+.slide > .item:nth-child(5) { left: calc(52% + 340px); }
 .slide > .item:nth-child(n + 6) {
-  left: calc(50% + 660px);
+  left: calc(52% + 510px);
   opacity: 0;
 }
 
@@ -181,10 +182,29 @@
     padding-top: 24px;
   }
 
+  .gallery-page {
+    min-height: calc(100svh - 102px);
+  }
+
   .category-tab {
     padding-inline: 14px;
     font-size: 0.84rem;
   }
+
+  .gallery-slider {
+    height: min(640px, calc(70vh + 40px));
+    min-height: 500px;
+  }
+
+  .slide .item {
+    top: calc(50% - 50px);
+    width: 120px;
+    height: 180px;
+  }
+
+  .slide > .item:nth-child(4) { left: calc(52% + 130px); }
+  .slide > .item:nth-child(5) { left: calc(52% + 260px); }
+  .slide > .item:nth-child(n + 6) { left: calc(52% + 390px); }
 
   .slide > .item:nth-child(1)::after,
   .slide > .item:nth-child(2)::after {
