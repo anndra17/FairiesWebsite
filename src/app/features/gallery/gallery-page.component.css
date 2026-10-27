@@ -10,7 +10,7 @@
 
 .gallery-page {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   width: 100%;
   min-height: calc(100svh - 110px);
 }
@@ -33,32 +33,52 @@
 }
 
 .category-tabs {
+  position: absolute;
+  z-index: 3;
+  top: 16px;
+  right: 12px;
+  left: 12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 24px;
+  align-items: center;
+  gap: 0;
 }
 
 .category-tab {
-  min-height: 44px;
-  padding: 10px 20px;
-  border: 1px solid #eadde9;
-  border-radius: 999px;
-  background: #fff;
-  color: #68466e;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 0;
+  background: transparent;
+  color: #fff;
   cursor: pointer;
   font: inherit;
   font-size: 0.92rem;
-  font-weight: 650;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  font-weight: 600;
+  text-shadow: 0 1px 5px rgb(25 13 28 / 70%);
+  transition: color 0.2s ease;
 }
 
 .category-tab.active {
-  border-color: #6f3b78;
-  background: #6f3b78;
-  color: #fffaf8;
-  box-shadow: 0 8px 22px #35163d24;
+  color: #ffe3a8;
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: #ffe3a8;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.category-separator {
+  display: grid;
+  width: 24px;
+  height: 30px;
+  place-items: center;
+  color: #ffe3a8;
+}
+
+.category-separator svg {
+  width: 21px;
+  height: 26px;
 }
 
 .category-tab:focus-visible,
@@ -70,10 +90,22 @@
 .gallery-slider {
   position: relative;
   width: 100%;
-  height: min(680px, calc(68vh + 40px));
-  min-height: 470px;
+  height: min(720px, calc(68vh + 80px));
+  min-height: 510px;
   overflow: hidden;
   background: #68466e;
+}
+
+.gallery-slider::before {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 88px;
+  background: linear-gradient(180deg, rgb(23 13 28 / 48%), transparent);
+  content: '';
+  pointer-events: none;
 }
 
 .slide .item {
@@ -192,13 +224,22 @@
   }
 
   .category-tab {
-    padding-inline: 14px;
-    font-size: 0.84rem;
+    padding-inline: 6px;
+    font-size: 0.78rem;
+  }
+
+  .category-separator {
+    width: 20px;
+  }
+
+  .category-separator svg {
+    width: 18px;
+    height: 23px;
   }
 
   .gallery-slider {
-    height: min(640px, calc(70vh + 40px));
-    min-height: 500px;
+    height: min(680px, calc(70vh + 80px));
+    min-height: 540px;
   }
 
   .slide .item {
