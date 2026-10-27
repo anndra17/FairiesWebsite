@@ -6,7 +6,7 @@ import { SITE_CONTENT } from '../../content/site-content';
   template: `
     <section id="packages" class="scroll-mt-24 bg-[radial-gradient(ellipse_at_10%_10%,#f5e8f2_0,transparent_34%),var(--color-paper)] py-16 sm:py-24">
       <div class="site-container">
-        <div class="mb-10 max-w-[720px]"><span class="eyebrow">{{ content.packages.eyebrow }}</span><h1 class="section-title">{{ content.packages.title }}</h1><p class="mt-4 text-lg leading-relaxed text-muted">{{ content.packages.description }}</p></div>
+        <div class="mx-auto mb-10 max-w-[720px] text-center"><span class="eyebrow">{{ content.packages.eyebrow }}</span><h1 class="section-title">{{ content.packages.title }}</h1><p class="mt-4 text-lg leading-relaxed text-muted">{{ content.packages.description }}</p></div>
         <div class="grid items-stretch gap-5 lg:grid-cols-3">
           @for (package of content.packages.cards; track package.tier) {
             <article class="relative flex flex-col rounded-3xl border border-line bg-white p-6 shadow-card sm:p-7" [class.lg:-translate-y-2]="package.featured" [class.border-2]="package.featured" [class.border-teal]="package.featured" [class.shadow-soft]="package.featured">
