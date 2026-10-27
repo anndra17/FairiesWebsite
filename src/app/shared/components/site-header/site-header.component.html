@@ -6,7 +6,7 @@
       @for (link of content.header.links; track link.target) {
         <a class="py-2 text-sm font-semibold text-muted transition hover:text-plum md:py-0" [routerLink]="link.target" (click)="closeMenu()">{{ link.label }}</a>
       }
-      <a class="rounded-full bg-plum/10 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white md:py-2.5" [routerLink]="content.header.cta.target" (click)="closeMenu()">{{ content.header.cta.label }} <span aria-hidden="true">↗</span></a>
+      <a class="rounded-full bg-plum/10 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white md:py-2.5" [href]="content.header.cta.target" (click)="closeMenu()">{{ content.header.cta.label }} <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>

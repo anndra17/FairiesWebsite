@@ -16,7 +16,7 @@ export const SITE_CONTENT = {
       { label: 'Povestea noastră', target: '/povestea-noastra', page: true },
       { label: 'Pachete 2026', target: '/pachete-2026', page: true },
     ],
-    cta: { label: 'Hai să alegem magia', target: '/pachete-2026', page: true },
+    cta: { label: 'Hai să alegem magia', target: 'tel:0774469280', page: true },
   },
   hero: {
     eyebrow: 'Ursitoarele Fermecătoare · Brașov',
