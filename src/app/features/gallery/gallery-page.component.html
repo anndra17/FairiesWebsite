@@ -30,7 +30,7 @@
     </nav>
 
     <div class="slide" [attr.aria-label]="activeCategory.title">
-      @for (photo of visiblePhotos; track photo.src; let i = $index) {
+      @for (photo of visiblePhotos; track photo.src + photo.story; let i = $index) {
         <div
           class="item"
           [style.background-image]="'url(' + photo.src + ')'"
@@ -40,7 +40,7 @@
             <div class="content">
               <span class="content-kicker">{{ activeCategory.label }}</span>
               <h2 class="name">{{ activeCategory.title }}</h2>
-              <p class="description">{{ activeCategory.description }}</p>
+              <p class="description">{{ activePhoto.story }}</p>
             </div>
           }
         </div>
