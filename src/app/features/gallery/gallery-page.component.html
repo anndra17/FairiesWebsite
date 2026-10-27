@@ -1,56 +1,46 @@
-    <div class="gallery-slider">
+<main class="gallery-page" aria-labelledby="gallery-title">
+  <header class="section-heading">
+    <span class="eyebrow">Amintiri fermecate</span>
+    <h1 id="gallery-title" class="section-title">Magia prinde viață în fotografii</h1>
+    <p>Alege serviciul și descoperă momentele care pot face parte din povestea botezului vostru.</p>
+  </header>
 
-        <div class="slide" #slide>
+  <nav class="category-tabs" aria-label="Categorii de servicii din galerie">
+    @for (category of categories; track category.id; let i = $index) {
+      <button
+        type="button"
+        class="category-tab"
+        [class.active]="activeCategoryIndex === i"
+        [attr.aria-pressed]="activeCategoryIndex === i"
+        (click)="selectCategory(i)">
+        {{ category.label }}
+      </button>
+    }
+  </nav>
 
-            <div class="item"
-                style="background-image: url('/assets/gallery/Ursitoare/PozaFinalFamilie.jpeg');">
-                <div class="content">
-                    <div class="name">Spectacolul Ursitoarelor</div>
-                    <div class="description">Descrierea spectacolului</div>
-                    <button class="btn">Vezi mai mult</button>
-                </div>
+  <section class="gallery-slider" aria-label="Fotografii din categoria selectată" aria-live="polite">
+    <div class="slide" [attr.aria-label]="activeCategory.title">
+      @for (photo of visiblePhotos; track photo.src; let i = $index) {
+        <div
+          class="item"
+          [style.background-image]="'url(' + photo.src + ')'"
+          role="img"
+          [attr.aria-label]="photo.alt">
+          @if (i === 1) {
+            <div class="content">
+              <span class="content-kicker">{{ activeCategory.label }}</span>
+              <h2 class="name">{{ activeCategory.title }}</h2>
+              <p class="description">{{ activeCategory.description }}</p>
             </div>
-
-            <div class="item"
-                style="background-image: url('/assets/gallery/FacePainting/Cirese.jpeg');">
-                <div class="content">
-                    <div class="name">Pictură pe față</div>
-                    <div class="description">Descrierea spectacolului</div>
-                    <button class="btn">Vezi mai mult</button>
-                </div>
-            </div>
-
-            <div class="item"
-                style="background-image: url('/assets/gallery/Atelier/SetupReciclART.jpeg');">
-                <div class="content">
-                    <div class="name">Atelier Creativ</div>
-                    <div class="des">Descrierea spectacolului</div>
-                    <button class="btn">Vezi mai mult</button>
-                </div>
-            </div>
-
-            <div class="item"
-                style="background-image: url('/assets/gallery/Atelier/SetupReciclART.jpeg');">
-                <div class="content">
-                    <div class="name">Spectacolul Ursitoarelor</div>
-                    <div class="des">Descrierea spectacolului</div>
-                    <button class="btn">Vezi mai mult</button>
-                </div>
-            </div>
-
-            <div class="item"
-                style="background-image: url('/assets/gallery/Atelier/SetupReciclART.jpeg');">
-                <div class="content">
-                    <div class="name">Spectacolul Ursitoarelor</div>
-                    <div class="des">Descrierea spectacolului</div>
-                    <button class="btn">Vezi mai mult</button>
-                </div>
-            </div>
-
+          }
         </div>
-
-        <div class="button">
-            <button class="prev" type="button" aria-label="Imaginea precedentă" (click)="showPrevious()">‹</button>
-            <button class="next" type="button" aria-label="Imaginea următoare" (click)="showNext()">›</button>
-        </div>
+      }
     </div>
+
+    <div class="gallery-controls" [attr.aria-label]="'Navigare fotografii: ' + activeCategory.label">
+      <button class="prev" type="button" aria-label="Fotografia anterioară" (click)="showPrevious()">‹</button>
+      <span class="photo-count" aria-live="polite">{{ visiblePhotos.length }} fotografii</span>
+      <button class="next" type="button" aria-label="Fotografia următoare" (click)="showNext()">›</button>
+    </div>
+  </section>
+</main>
