@@ -14,11 +14,27 @@ import { SITE_CONTENT } from '../../content/site-content';
               <span class="text-xs font-extrabold uppercase tracking-[.14em] text-teal-dark">{{ package.tier }}</span><h2 class="mt-3 font-display text-3xl leading-tight text-plum-dark">{{ package.name }}</h2><p class="mt-3 min-h-20 text-sm leading-relaxed text-muted">{{ package.description }}</p>
               <p class="mt-3 border-b border-line pb-4 text-sm text-muted"><span class="font-semibold text-plum-dark">Durata:</span> {{ package.duration }}</p>
               <ul class="mb-6 mt-4 flex-1 space-y-3">@for (feature of package.features; track feature) { <li class="flex gap-3 text-sm leading-relaxed text-ink"><span class="text-teal" aria-hidden="true">✦</span><span>{{ feature }}</span></li> }</ul>
-              <a class="rounded-full border border-plum/15 bg-plum/5 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white" href="/#preparation">{{ package.cta }} <span aria-hidden="true">↗</span></a>
+              <a class="rounded-full border border-plum/15 bg-plum/5 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white" href="#preparation">{{ package.cta }} <span aria-hidden="true">↗</span></a>
             </article>
           }
         </div>
         <p class="mx-auto mt-8 max-w-4xl text-center text-sm leading-relaxed text-muted"><strong class="text-plum-dark">{{ content.packages.noteLabel }}</strong> {{ content.packages.note }}</p>
+      </div>
+    </section>
+
+    <section id="preparation" class="scroll-mt-24 bg-mint/70 py-20 sm:py-24 lg:py-28">
+      <div class="site-container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <span class="eyebrow">{{ content.preparation.eyebrow }}</span>
+          <h2 class="section-title">{{ content.preparation.title }}</h2>
+          <p class="mt-4 leading-relaxed text-muted">{{ content.preparation.description }}</p>
+          <a class="button-primary mt-6" href="#packages">{{ content.preparation.cta }}</a>
+        </div>
+        <ol class="grid grid-rows-4 gap-3">
+          @for (step of content.preparation.steps; track step.title; let i = $index) {
+            <li class="grid grid-cols-[42px_1fr] gap-4 rounded-2xl bg-white p-4 sm:p-5"><span class="grid size-10 place-items-center rounded-full bg-lilac font-display text-xl text-plum">{{ i + 1 }}</span><div><h3 class="text-lg font-bold text-plum-dark">{{ step.title }}</h3><p class="mt-1 text-sm leading-relaxed text-muted">{{ step.description }}</p></div></li>
+          }
+        </ol>
       </div>
     </section>
   `,

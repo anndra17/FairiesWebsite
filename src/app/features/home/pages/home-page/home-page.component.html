@@ -84,21 +84,6 @@
   </div>
 </section>
 
-<section id="preparation" class="scroll-mt-24 bg-mint/70 py-20 sm:py-24 lg:py-28">
-  <div class="site-container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-    <div>
-      <span class="eyebrow">{{ content.preparation.eyebrow }}</span>
-      <h2 class="section-title">{{ content.preparation.title }}</h2>
-      <p class="mt-4 leading-relaxed text-muted">{{ content.preparation.description }}</p>
-      <a class="button-primary mt-6" href="/pachete-2026">{{ content.preparation.cta }}</a></div>
-    <ol class="grid grid-rows-4 gap-3">
-      @for (step of content.preparation.steps; track step.title; let i = $index) {
-        <li class="grid grid-cols-[42px_1fr] gap-4 rounded-2xl bg-white p-4 sm:p-5"><span class="grid size-10 place-items-center rounded-full bg-lilac font-display text-xl text-plum">{{ i + 1 }}</span><div><h3 class="text-lg font-bold text-plum-dark">{{ step.title }}</h3><p class="mt-1 text-sm leading-relaxed text-muted">{{ step.description }}</p></div></li>
-      }
-    </ol>
-  </div>
-</section>
-
 <section class="bg-[linear-gradient(115deg,#eaf4f0,#f5e9f1_70%,#fbf0e6)] px-5 py-20 text-center sm:py-24">
   <div class="mx-auto max-w-3xl">
     <span class="eyebrow">{{ content.closing.eyebrow }}</span>
