@@ -90,8 +90,8 @@
 .gallery-slider {
   position: relative;
   width: 100%;
-  height: min(720px, calc(68vh + 80px));
-  min-height: 510px;
+  height: min(690px, calc(68vh + 50px));
+  min-height: 480px;
   overflow: hidden;
   background: #68466e;
 }
@@ -238,8 +238,8 @@
   }
 
   .gallery-slider {
-    height: min(680px, calc(70vh + 80px));
-    min-height: 540px;
+    height: min(670px, calc(70vh + 70px));
+    min-height: 560px;
   }
 
   .slide .item {
