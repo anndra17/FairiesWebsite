@@ -1,7 +1,7 @@
 :host {
   display: block;
   min-height: calc(100svh - 78px);
-  padding-top: 32px;
+  padding-top: 64px;
   background:
     radial-gradient(ellipse at 12% 6%, rgb(248 229 221 / 55%), transparent 34%),
     radial-gradient(ellipse at 88% 22%, rgb(230 218 239 / 55%), transparent 36%),
@@ -21,6 +21,15 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.gallery-page > .section-heading {
+  min-height: 231px;
+}
+
+.gallery-page > .section-heading p {
+  max-width: 640px;
+  margin-inline: auto;
 }
 
 .category-tabs {
@@ -178,10 +187,6 @@
 }
 
 @media (max-width: 640px) {
-  :host {
-    padding-top: 24px;
-  }
-
   .gallery-page {
     min-height: calc(100svh - 102px);
   }
@@ -225,5 +230,11 @@
 
   .gallery-controls {
     bottom: 14px;
+  }
+}
+
+@media (min-width: 640px) {
+  :host {
+    padding-top: 96px;
   }
 }
