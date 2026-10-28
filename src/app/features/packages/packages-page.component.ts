@@ -15,7 +15,7 @@ import { SITE_CONTENT } from '../../content/site-content';
               <span class="text-xs font-extrabold uppercase tracking-[.14em] text-teal-dark">{{ package.tier }}</span><h2 class="mt-3 font-display text-3xl leading-tight text-plum-dark">{{ package.name }}</h2><p class="mt-3 min-h-20 text-sm leading-relaxed text-muted">{{ package.description }}</p>
               <p class="mt-3 border-b border-line pb-4 text-sm text-muted"><span class="font-semibold text-plum-dark">Durata:</span> {{ package.duration }}</p>
               <ul class="mb-6 mt-4 flex-1 space-y-3">@for (feature of package.features; track feature) { <li class="flex gap-3 text-sm leading-relaxed text-ink"><span class="text-teal" aria-hidden="true">✦</span><span>{{ feature }}</span></li> }</ul>
-              <a class="rounded-full border border-plum/15 bg-plum/5 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white" href="#preparation">{{ package.cta }} <span aria-hidden="true">↗</span></a>
+              <a class="rounded-full border border-plum/15 bg-plum/5 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white" [href]="'/pachete-2026#' + package.target">{{ package.cta }} <span aria-hidden="true">↗</span></a>
             </article>
           }
         </div>
