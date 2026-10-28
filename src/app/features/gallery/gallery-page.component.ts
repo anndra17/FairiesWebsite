@@ -76,7 +76,7 @@ export class GalleryPageComponent {
         { src: '/assets/gallery/FacePainting/bee.jpeg', alt: 'Pictură pe față cu o albină', story: 'O albinuță zumzăie pe obraz și pornește în zbor spre următoarea aventură.' },
         { src: '/assets/gallery/FacePainting/Capybara.jpeg', alt: 'Pictură pe față cu o capibara', story: 'Capibara cea blândă transformă pictura pe față într-o întâlnire simpatică.' },
         { src: '/assets/gallery/FacePainting/Cirese.jpeg', alt: 'Pictură pe față cu cireșe', story: 'Două cireșe roșii aduc un strop de vară și prospețime pe chipul copilului.' },
-        { src: '/assets/gallery/FacePainting/Spiderman.jpeg', alt: 'Pictură pe față cu Spider-Man', story: 'Spider-Man e pregătit să țese o pânză de voie bună printre invitați.' },
+        { src: '/assets/gallery/FacePainting/Spiderman.jpeg', alt: 'Pictură pe față cu Spider-Man', story: 'Spider-Man e pregătit să țeasă o pânză de voie bună printre invitați.' },
         { src: '/assets/gallery/FacePainting/stitch.jpeg', alt: 'Pictură pe față cu Stitch', story: 'Stitch se alătură petrecerii și promite o aventură plină de pozne.' },
         { src: '/assets/gallery/FacePainting/tulips.jpeg', alt: 'Pictură pe față cu lalele', story: 'Lalelele înfloresc pe chip, într-un desen delicat ales de un mic iubitor de flori.' },
         { src: '/assets/gallery/FacePainting/tulips2.jpg', alt: 'Un alt model de pictură cu lalele', story: 'Un alt buchet de lalele colorează joaca și face loc unei noi povești.' },

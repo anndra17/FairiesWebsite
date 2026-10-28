@@ -26,3 +26,7 @@
   .button-light { background: white; color: var(--color-plum-dark); box-shadow: 0 10px 28px #49295312; }
   .button-primary:hover, .button-light:hover { transform: translateY(-2px); box-shadow: 0 12px 28px #49295326; }
 }
+
+@media (max-width: 639px) {
+  #home .hero-photo { aspect-ratio: 1; width: min(86%, 380px); height: auto; border-radius: 50%; object-fit: cover; }
+}
