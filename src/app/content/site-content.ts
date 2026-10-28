@@ -24,7 +24,7 @@ export const SITE_CONTENT = {
     titleSecondLine: 'O amintire mare.',
     description: 'La botez, trei zâne intră în poveste: două vin cu urări din suflet, iar a treia… cu chef de glume. Aducem emoție, râsete și un moment în care toată familia face parte din poveste.',
     primaryCta: { label: 'Descoperă experiențele', target: 'experiences' },
-    secondaryCta: { label: 'Vezi pachetele 2026', target: 'packages' },
+    secondaryCta: { label: 'Vezi pachetele 2026', target: '/pachete-2026' },
     note: 'Momente trăite împreună, povești care rămân.',
     imageAlt: 'Trei zâne în jurul unui bebeluș',
     valuesHeading: 'Ce punem în fiecare poveste',
@@ -53,7 +53,7 @@ export const SITE_CONTENT = {
     cards: [
       { icon: 'fairy', category: 'Poveste', title: 'Spectacolul Ursitoarelor', description: 'Trei zâne, urări pentru micuț, bunici și nași prinși în poveste, apoi probe jucăușe pentru invitați. Un final cu zâmbete, aplauze și fotografii.', detail: '15–20 minute · moment pentru toată familia' },
       { icon: 'palette', category: 'Culoare', title: 'Pictură pe față', description: 'După întâlnirea cu zânele, copiii își aleg un personaj preferat. Culori profesionale, pensule și sclipici cosmetic transformă imaginația în culoare.', detail: 'Pentru copii · maximum 12 incluși în pachet' },
-      { icon: 'scissors', category: 'Creație', title: 'Atelier creativ', description: 'Mânuțe ocupate, imaginație în voie: copiii creează aripi de zână sau săbii de cavaler și își iau acasă ceva făcut chiar de ei.', detail: 'Materiale reutilizate · aproximativ 50 minute' },
+      { icon: 'scissors', category: 'Creație', title: 'Atelier creativ', description: 'Mânuțe ocupate, imaginație în voie: copiii creează aripi de zână sau săbii de cavaler și își iau acasă ceva făcut chiar de ei.', detail: 'Materiale reciclate · grijă față de planetă' },
     ],
   },
   packages: {
