@@ -1,12 +1,12 @@
 <header class="sticky top-0 z-50 border-b border-line/70 bg-paper/90 backdrop-blur-xl">
   <div class="site-container flex h-[78px] items-center justify-between gap-6">
     <a class="shrink-0" routerLink="/" fragment="home" [attr.aria-label]="content.header.homeLinkLabel" (click)="closeMenu()"><img class="w-40 sm:w-[200px]" src="/assets/logo-horizontal.png" [attr.alt]="content.header.logoAlt" width="200" height="64" /></a>
-    <button class="grid size-11 place-items-center rounded-full text-2xl text-plum md:hidden" type="button" [attr.aria-label]="menuOpen() ? content.header.menuCloseLabel : content.header.menuOpenLabel" [attr.aria-expanded]="menuOpen()" aria-controls="primary-navigation" (click)="menuOpen.update((open) => !open)">{{ menuOpen() ? '×' : '☰' }}</button>
-    <nav id="primary-navigation" [attr.aria-label]="content.header.navigationLabel" class="absolute left-0 right-0 top-[78px] flex-col gap-2 border-b border-line bg-paper px-6 py-5 shadow-lg md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0 md:shadow-none" [class.flex]="menuOpen()" [class.hidden]="!menuOpen()">
+    <button class="grid size-11 place-items-center rounded-full text-2xl text-plum lg:hidden" type="button" [attr.aria-label]="menuOpen() ? content.header.menuCloseLabel : content.header.menuOpenLabel" [attr.aria-expanded]="menuOpen()" aria-controls="primary-navigation" (click)="menuOpen.update((open) => !open)">{{ menuOpen() ? '×' : '☰' }}</button>
+    <nav id="primary-navigation" [attr.aria-label]="content.header.navigationLabel" class="absolute left-0 right-0 top-[78px] flex-col gap-2 border-b border-line bg-paper px-6 py-5 shadow-lg lg:static lg:flex lg:flex-row lg:items-center lg:gap-7 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none" [class.flex]="menuOpen()" [class.hidden]="!menuOpen()">
       @for (link of content.header.links; track link.target) {
-        <a class="py-2 text-sm font-semibold text-muted transition hover:text-plum md:py-0" [routerLink]="link.target" (click)="closeMenu()">{{ link.label }}</a>
+        <a class="py-3 text-sm font-semibold text-muted transition hover:text-plum lg:py-0" [routerLink]="link.target" (click)="closeMenu()">{{ link.label }}</a>
       }
-      <a class="rounded-full bg-plum/10 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white md:py-2.5" [href]="content.header.cta.target" (click)="closeMenu()">{{ content.header.cta.label }} <span aria-hidden="true">↗</span></a>
+      <a class="rounded-full bg-plum/10 px-5 py-3 text-center text-sm font-bold text-plum transition hover:bg-plum hover:text-white lg:py-2.5" [href]="content.header.cta.target" (click)="closeMenu()">{{ content.header.cta.label }} <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>

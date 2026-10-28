@@ -2,7 +2,7 @@
 @import "./styles/theme.css";
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: clip; }
   body { min-width: 320px; background: var(--color-paper); color: var(--color-ink); font-family: var(--type-sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
   h1, h2, h3, h4, h5, h6 { font-family: var(--type-display); }
   img { display: block; max-width: 100%; }
@@ -29,4 +29,9 @@
 
 @media (max-width: 639px) {
   #home .hero-photo { aspect-ratio: 1; width: min(86%, 380px); height: auto; border-radius: 50%; object-fit: cover; }
+}
+
+@media (max-width: 360px) {
+  #home .hero-highlights li { gap: 8px; padding-inline: 4px; }
+  #home .hero-highlights li > span { font-size: 0.875rem; }
 }

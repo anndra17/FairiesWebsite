@@ -19,7 +19,7 @@
     </div>
     <div class="relative z-20 mt-4 rounded-3xl bg-plum-dark px-5 py-[25px] text-white shadow-soft sm:px-8">
       <p class="mb-[18px] text-center font-display text-lg text-gold-light">{{ content.hero.valuesHeading }}</p>
-      <ul class="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-[10px] text-gold-light">
+      <ul class="hero-highlights grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-[10px] text-gold-light">
         @for (highlight of content.hero.valueHighlights; track highlight.label) {
           <li class="flex items-center justify-center gap-3 px-3 py-[7px] text-center sm:border-r sm:border-white/20 sm:last:border-0"><img class="size-6 shrink-0 object-contain" [src]="'/assets/' + highlight.icon + '-icon.png'" alt="" /><span class="font-display text-base sm:text-lg">{{ highlight.label }}</span></li>
         }

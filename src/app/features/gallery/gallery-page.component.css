@@ -25,6 +25,7 @@
 
 .gallery-page > .section-heading {
   min-height: 231px;
+  padding-inline: 12px;
 }
 
 .gallery-page > .section-heading p {
@@ -42,11 +43,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0;
+  gap: 8px;
 }
 
 .category-tab {
-  min-height: 40px;
+  min-height: 44px;
   padding: 8px 12px;
   border: 0;
   background: transparent;
@@ -225,8 +226,8 @@
 
 .gallery-controls button {
   display: grid;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   border: 1px solid #6f3b78;
   border-radius: 50%;
@@ -263,7 +264,7 @@
   }
 
   .category-separator {
-    width: 20px;
+    display: none;
   }
 
   .category-separator svg {
@@ -305,6 +306,17 @@
 
   .gallery-controls {
     bottom: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .gallery-page > .section-heading .section-title {
+    font-size: clamp(2rem, 10vw, 2.5rem);
+    text-wrap: balance;
+  }
+
+  .gallery-page > .section-heading p {
+    text-wrap: pretty;
   }
 }
 
