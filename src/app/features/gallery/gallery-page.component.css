@@ -52,16 +52,16 @@
   background: transparent;
   color: #fff;
   cursor: pointer;
-  font: inherit;
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
   text-shadow: 0 1px 5px rgb(25 13 28 / 70%);
   transition: color 0.2s ease;
 }
 
 .category-tab.active {
   color: #ffe3a8;
-  font-weight: 750;
+  font-weight: 400;
   text-decoration: underline;
   text-decoration-color: #ffe3a8;
   text-decoration-thickness: 2px;
@@ -259,7 +259,7 @@
 
   .category-tab {
     padding-inline: 6px;
-    font-size: 0.78rem;
+    font-size: 0.86rem;
   }
 
   .category-separator {
