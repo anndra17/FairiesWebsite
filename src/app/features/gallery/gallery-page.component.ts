@@ -53,7 +53,7 @@ export class GalleryPageComponent {
       title: 'Momentul Ursitoarelor',
       description: 'Urări pentru micuț și familie, momente jucăușe și amintiri alături de zâne.',
       photos: [
-        { src: '/assets/gallery/Ursitoare/PozaUrsittoareVeche.jpeg', alt: 'Ursitoare la un eveniment de familie', story: 'Printre urări și zâmbete, rămâne o clipă de poveste surprinsă în fotografie.' },        
+        { src: '/assets/gallery/Ursitoare/PozaUrsittoareVeche.jpeg', alt: 'Ursitoare la un eveniment de familie', story: 'Printre urări și zâmbete, rămâne o clipă de poveste surprinsă în fotografie.' },
         { src: '/assets/gallery/Ursitoare/UrsitoareUrari.jpeg', alt: 'Ursitoarele rostesc urări pentru copil', story: 'Cu glas blând, ursitoarele așază urări de bine la începutul unei noi povești.' },
         { src: '/assets/gallery/Ursitoare/ParintiIntreUrsitoare.jpeg', alt: 'Părinții alături de ursitoare', story: 'Părinții sunt primiți în poveste, alături de ursitoarele care le aduc urări pentru micuț.' },
         { src: '/assets/gallery/Ursitoare/ZaneBuneExterior.jpeg', alt: 'Zâne bune la un eveniment în aer liber', story: 'Zânele bune întâmpină familia în aer liber și deschid împreună o poveste nouă.' },
@@ -89,9 +89,11 @@ export class GalleryPageComponent {
       description: 'Mânuțe ocupate, imaginație în voie și creații pe care copiii le iau acasă.',
       photos: [
         { src: '/assets/gallery/Atelier/AripiFinalizate.jpeg', alt: 'Aripi de zână create la atelier', story: 'Aripile sunt gata: fiecare copil pleacă acasă cu o creație făcută chiar de el.' },
-        { src: '/assets/gallery/Atelier/AtelierAripi.jpeg', alt: 'Copiii creează aripi de zână', story: 'Cu materiale colorate și multă imaginație, copiii își construiesc propriile aripi.' },
-        { src: '/assets/gallery/Atelier/ReciclARTAdulti.jpeg', alt: 'Activitate creativă ReciclART', story: 'La ReciclART, obiectele primesc o nouă viață prin idei și mâini harnice.' },
         { src: '/assets/gallery/Atelier/SetupReciclART.jpeg', alt: 'Materiale pregătite pentru atelierul ReciclART', story: 'Materialele sunt pregătite, iar masa de lucru așteaptă să înceapă aventura creativă.' },
+        { src: '/assets/gallery/Atelier/reciclartCopilarie1.jpg', alt: 'Tablou ReciclART cu un castel de poveste și un copil', story: 'O pânză colorată transformă imaginația copilului într-o scenă de poveste.' },
+        { src: '/assets/gallery/Atelier/reciclartCopilarie2.jpeg', alt: 'Tablou ReciclART cu o casă, un copil și personaje desenate', story: 'La atelier, copiii își așază personajele și locurile preferate într-o creație proprie.' },
+        { src: '/assets/gallery/Atelier/ReciclARTAdulti.jpeg', alt: 'Activitate creativă ReciclART', story: 'La ReciclART, obiectele primesc o nouă viață prin idei și mâini harnice.' },
+        { src: '/assets/gallery/Atelier/AtelierAripi.jpeg', alt: 'Copiii creează aripi de zână', story: 'Cu materiale colorate și multă imaginație, copiii își construiesc propriile aripi.' },
       ],
     },
   ];
