@@ -36,8 +36,8 @@ export const SITE_CONTENT = {
     ],
   },
   story: {
-    eyebrow: 'Povestea noastră',
-    title: 'Mai mult decât un spectacol. Un moment al vostru.',
+    eyebrow: 'Dincolo de imagini',
+    title: 'Mai mult decât un spectacol.\nUn moment al vostru.',
     imageAlt: 'Emblema Ursitoarelor Fermecătoare',
     paragraphs: [
       'Venim să sărbătorim venirea pe lume a copilului și să facem loc emoției, râsetelor și familiei. Zânele bune îi urează micuțului sănătate, noroc, fericire, iubire și prosperitate, iar bunicii și nașii primesc și ei un loc special în poveste.',
