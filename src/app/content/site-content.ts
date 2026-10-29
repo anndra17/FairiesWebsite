@@ -104,8 +104,6 @@ export const SITE_CONTENT = {
     logoAlt: 'Ursitoarele Fermecătoare',
     brandName: 'Ursitoarele Fermecătoare',
     tagline: 'Magia primelor amintiri · Brașov',
-    signoff: 'Cu drag și un pic de sclipici',
-    homeLinkLabel: 'Înapoi sus',
     contactHeading: 'Hai să vorbim despre povestea voastră',
     phoneLabel: 'Sună-ne la +40774469280',
     phoneNumber: '+40774469280',
