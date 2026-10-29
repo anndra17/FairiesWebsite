@@ -277,8 +277,13 @@
     min-height: 560px;
   }
 
+  .gallery-slider::after {
+    top: -10px;
+    height: 68px;
+  }
+
   .slide .item {
-    top: calc(50% - 50px);
+    top: calc(50% - 70px);
     width: 120px;
     height: 180px;
   }
