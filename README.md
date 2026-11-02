@@ -1,4 +1,4 @@
-# Ursitoare Web
+# Fairies Website
 
 Angular landing page for Ursitoarele Fermecătoare.
 
