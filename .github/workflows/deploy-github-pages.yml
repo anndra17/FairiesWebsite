@@ -29,15 +29,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular site
-        shell: bash
-        run: |
-          repository_name="${GITHUB_REPOSITORY#*/}"
-          if [[ "$repository_name" == "${GITHUB_REPOSITORY_OWNER}.github.io" ]]; then
-            base_href="/"
-          else
-            base_href="/${repository_name}/"
-          fi
-          npm run build -- --base-href "$base_href"
+        run: npm run build -- --base-href "/"
 
       - name: Add GitHub Pages route fallback
         run: cp dist/ursitoare-web/browser/index.html dist/ursitoare-web/browser/404.html
